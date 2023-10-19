@@ -1,0 +1,2 @@
+# /etc/udev/rules.d/99-midi-autoconnect.rules
+ACTION=="add|remove", SUBSYSTEM=="usb|bluetooth", RUN+="/usr/local/bin/midi-autoconnect.sh"
